@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savgo | Luxury Purses & Wallets</title>
+    <meta
+      name="description"
+      content="Savgo — a curated boutique of authentic luxury purses and wallets from Louis Vuitton, Gucci and Chanel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="savgo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .featured-collection {
+        padding-top: 0;
+      }
+      .why-us-wrap {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 50px;
+        align-items: center;
+      }
+      .why-us-media {
+        position: relative;
+      }
+      .why-us-media img {
+        border-radius: 3px;
+        box-shadow: var(--shadow-md);
+      }
+      .why-us-list {
+        display: grid;
+        gap: 22px;
+        margin-top: 10px;
+      }
+      .why-us-list li {
+        display: flex;
+        gap: 16px;
+      }
+      .why-us-list i {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        background: var(--gold-pale);
+        color: var(--gold-deep);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 900px) {
+        .why-us-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-strip">
+      Complimentary shipping on all orders over $500 &nbsp;|&nbsp; Authenticity
+      guaranteed on every piece
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="savgo.png" alt="Savgo Logo" />
+          <span class="logo-text">SAV<span>GO</span></span>
+        </a>
+        <form class="search-bar" role="search">
+          <input type="text" placeholder="Search purses, wallets, brands..." />
+          <button type="submit" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="header-actions">
+          <a href="contact.html"><i class="fa-regular fa-user"></i>Account</a>
+          <a href="compare.html"
+            ><i class="fa-solid fa-scale-balanced"></i>Compare</a
+          >
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i>Bag</a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="nav-inner">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="louis-vuitton.html">Louis Vuitton</a>
+          <a href="gucci.html">Gucci</a>
+          <a href="chanel.html">Chanel</a>
+          <a href="compare.html">Compare</a>
+          <a href="contact.html">Contact</a>
+          <a href="louis-vuitton.html" class="btn btn-gold btn-sm nav-cta"
+            >Shop Now</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy fade-in">
+          <span class="eyebrow">The Savgo Edit — New Season</span>
+          <h1>Timeless leather, carried with intention.</h1>
+          <p>
+            An intimate boutique of authenticated Louis Vuitton, Gucci and
+            Chanel purses and wallets — sourced, inspected and delivered with
+            quiet ceremony.
+          </p>
+          <div class="hero-cta">
+            <a href="#collection" class="btn btn-gold">Shop the Edit</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-media fade-in d2">
+          <img
+            class="float-1 hero_image_bag"
+            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=900&q=80"
+            alt="Luxury leather handbag"
+          />
+          <img
+            class="float-2"
+            src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80"
+            alt="Folded leather wallet"
+          />
+          <div class="hero-badge">100%<br />Authentic</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED BRANDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Maisons We Carry</span>
+          <h2>Three houses, one standard</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="grid grid-3">
+          <div class="brand-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=700&q=80"
+              alt="Louis Vuitton handbag"
+            />
+            <div class="brand-card-content">
+              <span>Maison Française</span>
+              <h3>Louis Vuitton</h3>
+              <a href="louis-vuitton.html"
+                >Explore the collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="brand-card fade-in d1">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=700&q=80"
+              alt="Gucci handbag"
+            />
+            <div class="brand-card-content">
+              <span>Casa Italiana</span>
+              <h3>Gucci</h3>
+              <a href="gucci.html"
+                >Explore the collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="brand-card fade-in d2">
+            <img
+              src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=700&q=80"
+              alt="Chanel handbag"
+            />
+            <div class="brand-card-content">
+              <span>Maison de Couture</span>
+              <h3>Chanel</h3>
+              <a href="chanel.html"
+                >Explore the collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED COLLECTION -->
+    <section class="section bg-light featured-collection" id="collection">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Featured Collection</span>
+          <h2>This week's arrivals</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="grid grid-4">
+          <div class="card fade-in">
+            <div class="card-media">
+              <span class="card-tag">New</span
+              ><img
+                src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500&q=80"
+                alt="Monogram tote bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Louis Vuitton</div>
+              <h3 class="card-title">Monogram Neverfull Tote</h3>
+              <div class="stars">★★★★★ <span>(128)</span></div>
+              <div class="card-price"><span class="now">$2,150</span></div>
+              <a href="louis-vuitton.html" class="btn btn-sm btn-block"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card fade-in d1">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80"
+                alt="GG Marmont bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Gucci</div>
+              <h3 class="card-title">GG Marmont Shoulder Bag</h3>
+              <div class="stars">★★★★★ <span>(96)</span></div>
+              <div class="card-price">
+                <span class="now">$2,490</span><span class="was">$2,790</span>
+              </div>
+              <a href="gucci.html" class="btn btn-sm btn-block">View Details</a>
+            </div>
+          </div>
+
+          <div class="card fade-in d2">
+            <div class="card-media">
+              <span class="card-tag">Rare</span
+              ><img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&q=80"
+                alt="Classic flap bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Chanel</div>
+              <h3 class="card-title">Classic Flap Bag, Medium</h3>
+              <div class="stars">★★★★★ <span>(214)</span></div>
+              <div class="card-price"><span class="now">$8,800</span></div>
+              <a href="chanel.html" class="btn btn-sm btn-block"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card fade-in d3">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80"
+                alt="Leather bifold wallet"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Louis Vuitton</div>
+              <h3 class="card-title">Damier Bifold Wallet</h3>
+              <div class="stars">★★★★☆ <span>(74)</span></div>
+              <div class="card-price"><span class="now">$695</span></div>
+              <a href="louis-vuitton.html" class="btn btn-sm btn-block"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-media">
+              <img
+                src="https://i.pinimg.com/736x/0d/a5/f7/0da5f74f6ded3b323639864593985034.jpg"
+                alt="Gucci crossbody bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Gucci</div>
+              <h3 class="card-title">Ophidia Mini Crossbody</h3>
+              <div class="stars">★★★★★ <span>(58)</span></div>
+              <div class="card-price"><span class="now">$1,290</span></div>
+              <a href="gucci.html" class="btn btn-sm btn-block">View Details</a>
+            </div>
+          </div>
+
+          <div class="card fade-in d1">
+            <div class="card-media">
+              <span class="card-tag">Trending</span
+              ><img
+                src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=500&q=80"
+                alt="Chanel card holder"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Chanel</div>
+              <h3 class="card-title">Caviar Leather Card Holder</h3>
+              <div class="stars">★★★★★ <span>(41)</span></div>
+              <div class="card-price"><span class="now">$540</span></div>
+              <a href="chanel.html" class="btn btn-sm btn-block"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card fade-in d2">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500&q=80"
+                alt="Louis Vuitton shoulder bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Louis Vuitton</div>
+              <h3 class="card-title">Pochette Métis Shoulder Bag</h3>
+              <div class="stars">★★★★★ <span>(163)</span></div>
+              <div class="card-price"><span class="now">$2,590</span></div>
+              <a href="louis-vuitton.html" class="btn btn-sm btn-block"
+                >View Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card fade-in d3">
+            <div class="card-media">
+              <img
+                src="https://sites.create-cdn.net/siteimages/24/5/0/245036/17/8/7/17874489/1000x750.JPG?1576161770"
+                alt="Gucci long wallet"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Gucci</div>
+              <h3 class="card-title">GG Marmont Long Wallet</h3>
+              <div class="stars">★★★★☆ <span>(37)</span></div>
+              <div class="card-price"><span class="now">$730</span></div>
+              <a href="gucci.html" class="btn btn-sm btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section">
+      <div class="container">
+        <div class="why-us-wrap">
+          <div class="why-us-media fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=700&q=80"
+              alt="Boutique craftsmanship detail"
+            />
+          </div>
+          <div class="why-us-copy fade-in d1">
+            <span class="eyebrow">Why Savgo</span>
+            <h2>Buying pre-loved luxury shouldn't feel like a gamble.</h2>
+            <ul class="why-us-list">
+              <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div>
+                  <h4>Independent authentication</h4>
+                  <p>
+                    Every piece passes a multi-point inspection before it
+                    reaches your door.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                  <h4>Insured, discreet delivery</h4>
+                  <p>
+                    Fully tracked and insured shipping in unbranded,
+                    tamper-evident packaging.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-rotate-left"></i>
+                <div>
+                  <h4>14-day returns</h4>
+                  <p>
+                    Not the one? Send it back within two weeks for a full
+                    refund.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                  <h4>Personal styling support</h4>
+                  <p>
+                    Our specialists help you find a piece that fits your life,
+                    not just the trend.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER BANNER -->
+    <section class="section tight">
+      <div class="container">
+        <div class="offer-banner fade-in">
+          <div>
+            <h3>Season closing — up to 20% off select wallets</h3>
+            <p>
+              Applies automatically at checkout on marked items, while stock
+              lasts.
+            </p>
+            <span class="offer-code">CODE: SAVGO20</span>
+          </div>
+          <a href="compare.html" class="btn btn-gold">Shop the Sale</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Client Notes</span>
+          <h2>Carried by people who notice details</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="grid grid-3">
+          <div class="testimonial-card fade-in">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "The Neverfull arrived exactly as photographed, with the date code
+              and receipt copy. Genuinely felt like a boutique experience."
+            </p>
+            <div class="testimonial-person">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80"
+                alt="Amara O."
+              />
+              <div><strong>Amara O.</strong><small>Verified Buyer</small></div>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in d1">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "I was nervous about buying a Chanel flap bag online. Savgo's
+              authentication report put every doubt to rest."
+            </p>
+            <div class="testimonial-person">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80"
+                alt="Priya S."
+              />
+              <div><strong>Priya S.</strong><small>Verified Buyer</small></div>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in d2">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "Ordered a Gucci wallet as a gift — packaging alone made it feel
+              like an occasion. Will be back for my own piece."
+            </p>
+            <div class="testimonial-person">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+                alt="Daniel K."
+              />
+              <div><strong>Daniel K.</strong><small>Verified Buyer</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div class="container">
+        <span class="eyebrow" style="color: var(--gold)">Stay In The Loop</span>
+        <h2>Join the Savgo list</h2>
+        <p>
+          New arrivals, private offers and restock alerts — no more than twice a
+          month.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 14px">
+            <img src="savgo.png" alt="Savgo Logo" />
+            <span class="logo-text">SAV<span>GO</span></span>
+          </a>
+          <p>
+            A curated boutique for authenticated luxury purses and wallets.
+            Carried, not just carried around.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/savgostore/"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/SavgoStore/" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/savgostore/"
+              aria-label="Pinterest"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@savanna_ug/photo/7659313465407966481"
+              aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="compare.html">Compare Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Brands</h4>
+          <ul>
+            <li><a href="louis-vuitton.html">Louis Vuitton</a></li>
+            <li><a href="gucci.html">Gucci</a></li>
+            <li><a href="chanel.html">Chanel</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">Authenticity Guarantee</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="contact.html">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Savgo Boutique. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

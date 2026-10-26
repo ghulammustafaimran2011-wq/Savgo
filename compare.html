@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Brands | Savgo</title>
+    <meta
+      name="description"
+      content="Compare Louis Vuitton, Gucci and Chanel purses and wallets side by side at Savgo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="savgo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .insight-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+      }
+      .insight-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        padding: 28px;
+      }
+      .insight-card h4 {
+        margin-bottom: 10px;
+        color: var(--gold-deep);
+      }
+      .choice-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+        text-align: center;
+      }
+      .choice-card {
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        padding: 32px 22px;
+        transition:
+          box-shadow var(--speed) ease,
+          transform var(--speed) ease;
+      }
+      .choice-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+      }
+      .choice-card i {
+        font-size: 1.6rem;
+        color: var(--gold);
+        margin-bottom: 14px;
+        display: block;
+      }
+      @media (max-width: 900px) {
+        .insight-wrap,
+        .choice-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-strip">
+      Complimentary shipping on all orders over $500 &nbsp;|&nbsp; Authenticity
+      guaranteed on every piece
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="savgo.png" alt="Savgo Logo" />
+          <span class="logo-text">SAV<span>GO</span></span>
+        </a>
+        <form class="search-bar" role="search">
+          <input type="text" placeholder="Search purses, wallets, brands..." />
+          <button type="submit" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="header-actions">
+          <a href="contact.html"><i class="fa-regular fa-user"></i>Account</a>
+          <a href="compare.html"
+            ><i class="fa-solid fa-scale-balanced"></i>Compare</a
+          >
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i>Bag</a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="nav-inner">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="louis-vuitton.html">Louis Vuitton</a>
+          <a href="gucci.html">Gucci</a>
+          <a href="chanel.html">Chanel</a>
+          <a href="compare.html" class="active">Compare</a>
+          <a href="contact.html">Contact</a>
+          <a href="louis-vuitton.html" class="btn btn-gold btn-sm nav-cta"
+            >Shop Now</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Compare</div>
+        <span class="eyebrow">Brand Comparison</span>
+        <h1>Louis Vuitton, Gucci, or Chanel?</h1>
+        <p>
+          Three houses, three very different personalities. Here's how they
+          stack up side by side.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <div class="brand-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=700&q=80"
+              alt="Louis Vuitton"
+            />
+            <div class="brand-card-content">
+              <span>Since 1854</span>
+              <h3>Louis Vuitton</h3>
+              <a href="louis-vuitton.html"
+                >View Collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="brand-card fade-in d1">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=700&q=80"
+              alt="Gucci"
+            />
+            <div class="brand-card-content">
+              <span>Since 1921</span>
+              <h3>Gucci</h3>
+              <a href="gucci.html"
+                >View Collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="brand-card fade-in d2">
+            <img
+              src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&q=80"
+              alt="Chanel"
+            />
+            <div class="brand-card-content">
+              <span>Since 1910</span>
+              <h3>Chanel</h3>
+              <a href="chanel.html"
+                >View Collection <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Side By Side</span>
+          <h2>The luxury comparison table</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="compare-table-wrap fade-in">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Louis Vuitton</th>
+                <th>Gucci</th>
+                <th>Chanel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Founded</td>
+                <td>1854, Paris</td>
+                <td>1921, Florence</td>
+                <td>1910, Paris</td>
+              </tr>
+              <tr>
+                <td>Signature Material</td>
+                <td>Monogram canvas</td>
+                <td>GG canvas &amp; leather</td>
+                <td>Quilted lambskin</td>
+              </tr>
+              <tr>
+                <td>Entry Price (Wallet)</td>
+                <td>from $385</td>
+                <td>from $450</td>
+                <td>from $495</td>
+              </tr>
+              <tr>
+                <td>Entry Price (Bag)</td>
+                <td>from $1,890</td>
+                <td>from $1,150</td>
+                <td>from $2,450</td>
+              </tr>
+              <tr>
+                <td>Best For</td>
+                <td>Everyday structure</td>
+                <td>Bold statement pieces</td>
+                <td>Timeless formalwear</td>
+              </tr>
+              <tr>
+                <td>Resale Strength</td>
+                <td>Strong</td>
+                <td>Moderate–Strong</td>
+                <td>Strongest</td>
+              </tr>
+              <tr>
+                <td>Iconic Piece</td>
+                <td>Neverfull Tote</td>
+                <td>GG Marmont</td>
+                <td>Classic Flap</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Head To Head</span>
+          <h2>Signature pieces compared</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="grid grid-3">
+          <div class="card fade-in">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500&q=80"
+                alt="Neverfull tote"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Louis Vuitton</div>
+              <h3 class="card-title">Neverfull MM Tote</h3>
+              <p style="font-size: 0.88rem">
+                Roomy, structured, built for daily carry.
+              </p>
+              <div class="card-price"><span class="now">$2,150</span></div>
+              <a href="louis-vuitton.html" class="btn btn-sm btn-block"
+                >View Product</a
+              >
+            </div>
+          </div>
+          <div class="card fade-in d1">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=80"
+                alt="GG Marmont bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Gucci</div>
+              <h3 class="card-title">GG Marmont Shoulder Bag</h3>
+              <p style="font-size: 0.88rem">
+                Quilted chevron leather, statement hardware.
+              </p>
+              <div class="card-price"><span class="now">$2,490</span></div>
+              <a href="gucci.html" class="btn btn-sm btn-block">View Product</a>
+            </div>
+          </div>
+          <div class="card fade-in d2">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&q=80"
+                alt="Classic flap bag"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-brand">Chanel</div>
+              <h3 class="card-title">Classic Flap Bag, Medium</h3>
+              <p style="font-size: 0.88rem">
+                Diamond quilting, timeless chain strap.
+              </p>
+              <div class="card-price"><span class="now">$8,800</span></div>
+              <a href="chanel.html" class="btn btn-sm btn-block"
+                >View Product</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Brand Insights</span>
+          <h2>Beyond the logo</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="insight-wrap">
+          <div class="insight-card fade-in">
+            <h4>Louis Vuitton</h4>
+            <p>
+              Rooted in trunk-making, LV pieces favor structure and durability.
+              A safe first investment for buyers who want a bag they'll use for
+              a decade.
+            </p>
+          </div>
+          <div class="insight-card fade-in d1">
+            <h4>Gucci</h4>
+            <p>
+              Under a string of bold creative directors, Gucci leans maximalist.
+              It's the pick for buyers who want their bag to say something.
+            </p>
+          </div>
+          <div class="insight-card fade-in d2">
+            <h4>Chanel</h4>
+            <p>
+              Restrained, quilted, and consistently the strongest performer on
+              resale. The choice for buyers thinking long-term.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Customer Choice</span>
+          <h2>How our clients decide</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="choice-wrap">
+          <div class="choice-card fade-in">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>For Everyday Carry</h4>
+            <p>
+              Most clients choose Louis Vuitton for its structure and easy-care
+              canvas.
+            </p>
+          </div>
+          <div class="choice-card fade-in d1">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h4>For Statement Nights</h4>
+            <p>
+              Gucci wins for clients who want their bag to be the conversation
+              starter.
+            </p>
+          </div>
+          <div class="choice-card fade-in d2">
+            <i class="fa-solid fa-vault"></i>
+            <h4>For Long-Term Value</h4>
+            <p>
+              Chanel is the most requested brand among our resale and investment
+              buyers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight bg-light">
+      <div class="container">
+        <div class="offer-banner fade-in">
+          <div>
+            <h3>Can't decide? Bundle and save.</h3>
+            <p>
+              Buy any two wallets across brands and save 12% automatically at
+              checkout.
+            </p>
+            <span class="offer-code">CODE: BUNDLE12</span>
+          </div>
+          <a href="contact.html" class="btn btn-gold">Talk to a Stylist</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <span class="eyebrow" style="color: var(--gold)">Stay In The Loop</span>
+        <h2>Join the Savgo list</h2>
+        <p>
+          New arrivals, private offers and restock alerts — no more than twice a
+          month.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 14px">
+            <img src="savgo.png" alt="Savgo Logo" />
+            <span class="logo-text">SAV<span>GO</span></span>
+          </a>
+          <p>
+            A curated boutique for authenticated luxury purses and wallets.
+            Carried, not just carried around.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/savgostore/"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/SavgoStore/" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/savgostore/"
+              aria-label="Pinterest"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@savanna_ug/photo/7659313465407966481"
+              aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="compare.html">Compare Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Brands</h4>
+          <ul>
+            <li><a href="louis-vuitton.html">Louis Vuitton</a></li>
+            <li><a href="gucci.html">Gucci</a></li>
+            <li><a href="chanel.html">Chanel</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">Authenticity Guarantee</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="contact.html">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Savgo Boutique. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

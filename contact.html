@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Savgo | We're Here to Help</title>
+    <meta
+      name="description"
+      content="Get in touch with the Savgo team for order help, authentication questions, or styling advice."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="savgo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .info-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        padding: 30px;
+        text-align: center;
+        transition:
+          box-shadow var(--speed) ease,
+          transform var(--speed) ease;
+      }
+      .info-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+      }
+      .info-card i {
+        width: 56px;
+        height: 56px;
+        border: 1px solid var(--gold);
+        border-radius: 50%;
+        color: var(--gold-deep);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+        font-size: 1.3rem;
+      }
+      .contact-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+      .support-team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+      }
+      @media (max-width: 900px) {
+        .contact-info-grid,
+        .support-team-grid {
+          grid-template-columns: 1fr;
+        }
+        .contact-wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-strip">
+      Complimentary shipping on all orders over $500 &nbsp;|&nbsp; Authenticity
+      guaranteed on every piece
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <img src="savgo.png" alt="Savgo Logo" />
+          <span class="logo-text">SAV<span>GO</span></span>
+        </a>
+        <form class="search-bar" role="search">
+          <input type="text" placeholder="Search purses, wallets, brands..." />
+          <button type="submit" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="header-actions">
+          <a href="contact.html"><i class="fa-regular fa-user"></i>Account</a>
+          <a href="compare.html"
+            ><i class="fa-solid fa-scale-balanced"></i>Compare</a
+          >
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i>Bag</a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="nav-inner">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="louis-vuitton.html">Louis Vuitton</a>
+          <a href="gucci.html">Gucci</a>
+          <a href="chanel.html">Chanel</a>
+          <a href="compare.html">Compare</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="louis-vuitton.html" class="btn btn-gold btn-sm nav-cta"
+            >Shop Now</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+        <span class="eyebrow">We're Here to Help</span>
+        <h1>Get in touch</h1>
+        <p>
+          Questions about an order, authentication, or styling advice — our team
+          replies within one business day.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-info-grid fade-in">
+          <div class="info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Call Us</h4>
+            <p>+92 320 8381452<br />Mon–Fri, 9am–6pm EST</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email Us</h4>
+            <p>hello@savgo.com<br />support@savgo.com</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Visit Us</h4>
+            <p>221 Madison Avenue<br />New York, NY 10016</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-form fade-in">
+            <span class="eyebrow">Send a Message</span>
+            <h2 style="margin-bottom: 22px">We'd love to hear from you</h2>
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Ghulam-E-Mustafa"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Mustafa"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ghulam.mustafa.imran2011@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option>Order Inquiry</option>
+                  <option>Authentication Question</option>
+                  <option>Returns & Exchanges</option>
+                  <option>Styling Advice</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help?"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-block">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="fade-in d1">
+            <span class="eyebrow">Find Us</span>
+            <h2 style="margin-bottom: 22px">Visit the Savgo showroom</h2>
+            <div class="map-frame">
+              <iframe
+                src="https://www.google.com/maps?q=Madison+Avenue+New+York&output=embed"
+                title="Savgo showroom location"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p style="margin-top: 18px; font-size: 0.9rem">
+              Showroom visits are by appointment. Call or email ahead to reserve
+              a private viewing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Frequently Asked</span>
+          <h2>Quick answers</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div style="max-width: 760px; margin: 0 auto">
+          <div class="faq-item fade-in">
+            <h4>
+              <i class="fa-solid fa-circle-question"></i>How do I know a piece
+              is authentic?
+            </h4>
+            <p>
+              Every item ships with a signed authentication report detailing the
+              exact checks performed, from hardware stamping to stitch count.
+            </p>
+          </div>
+          <div class="faq-item fade-in d1">
+            <h4>
+              <i class="fa-solid fa-circle-question"></i>What is your return
+              policy?
+            </h4>
+            <p>
+              You have 14 days from delivery to return an unused item in its
+              original packaging for a full refund.
+            </p>
+          </div>
+          <div class="faq-item fade-in d2">
+            <h4>
+              <i class="fa-solid fa-circle-question"></i>Do you ship
+              internationally?
+            </h4>
+            <p>
+              Yes, we ship to most countries with full tracking and insurance
+              included at checkout.
+            </p>
+          </div>
+          <div class="faq-item fade-in d3">
+            <h4>
+              <i class="fa-solid fa-circle-question"></i>Can I sell my bag to
+              Savgo?
+            </h4>
+            <p>
+              We accept consignment and outright purchase for select pieces.
+              Email photos and details to sell@savgo.com to start.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <span class="eyebrow">Meet Support</span>
+          <h2>The team behind your inbox</h2>
+          <div class="gold-rule"><span></span></div>
+        </div>
+        <div class="support-team-grid">
+          <div class="team-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+              alt="Support specialist portrait"
+            />
+            <h4>Elena Rossi</h4>
+            <span>Order Support</span>
+          </div>
+          <div class="team-card fade-in d1">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+              alt="Authentication specialist portrait"
+            />
+            <h4>Sana Rahman</h4>
+            <span>Authentication Questions</span>
+          </div>
+          <div class="team-card fade-in d2">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+              alt="Styling advisor portrait"
+            />
+            <h4>Marc Delacroix</h4>
+            <span>Styling Advice</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <span class="eyebrow" style="color: var(--gold)">Stay In The Loop</span>
+        <h2>Join the Savgo list</h2>
+        <p>
+          New arrivals, private offers and restock alerts — no more than twice a
+          month.
+        </p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 14px">
+            <img src="savgo.png" alt="Savgo Logo" />
+            <span class="logo-text">SAV<span>GO</span></span>
+          </a>
+          <p>
+            A curated boutique for authenticated luxury purses and wallets.
+            Carried, not just carried around.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/savgostore/"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/SavgoStore/" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/savgostore/"
+              aria-label="Pinterest"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@savanna_ug/photo/7659313465407966481"
+              aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="compare.html">Compare Brands</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Brands</h4>
+          <ul>
+            <li><a href="louis-vuitton.html">Louis Vuitton</a></li>
+            <li><a href="gucci.html">Gucci</a></li>
+            <li><a href="chanel.html">Chanel</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">Authenticity Guarantee</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="contact.html">Track Order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Savgo Boutique. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
